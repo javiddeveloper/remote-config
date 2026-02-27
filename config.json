@@ -1,5 +1,79 @@
 {
-  "force_update": false,
-  "min_version": 1,
-  "ads_enabled": true
+  "app": {
+    "app_enabled": true,
+    "maintenance_mode": false,
+    "maintenance_message": "اپ موقتاً در حال بروزرسانی است"
+  },
+
+  "update": {
+    "force_update": false,
+    "min_version": 120,
+    "latest_version": 135,
+    "update_title": "نسخه جدید آماده است",
+    "update_message": "برای عملکرد بهتر اپ را بروزرسانی کنید",
+    "update_url": "market://details?id=ir.javiddeveloper.whatsappi"
+  },
+
+  "network": {
+    "api_base_url": "https://api.site.com",
+    "socket_url": "wss://socket.site.com",
+    "request_timeout_sec": 30
+  },
+
+  "ads": {
+    "ads_enabled": true,
+
+    "banner": {
+      "enabled": true,
+      "refresh_sec": 30
+    },
+
+    "interstitial": {
+      "enabled": true,
+      "show_after_actions": 4,
+      "cooldown_sec": 120,
+      "show_on_chat_exit": true
+    },
+
+    "rewarded": {
+      "enabled": true,
+      "reward_amount": 5,
+      "daily_limit": 3
+    },
+
+    "app_open": {
+      "enabled": false,
+      "cooldown_sec": 1800
+    }
+  },
+
+  "features": {
+    "voice_call_enabled": true,
+    "video_call_enabled": false,
+    "status_enabled": true,
+    "group_chat_enabled": true,
+    "new_ui_enabled": false
+  },
+
+  "limits": {
+    "max_group_members": 256,
+    "max_media_size_mb": 50,
+    "message_retry_count": 3
+  },
+
+  "engagement": {
+    "review_prompt_enabled": true,
+    "review_after_days": 3,
+    "review_after_sessions": 5
+  },
+
+  "firebase_fallback": {
+    "crashlytics_enabled": true,
+    "analytics_enabled": true
+  },
+
+  "config": {
+    "config_version": 1,
+    "refresh_interval_hours": 6
+  }
 }
